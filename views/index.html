@@ -1,0 +1,53 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URL shortener</title>
+    <style>
+      body{
+        font-family:Arial;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <h1>
+        URL Shortener
+      </h1><hr>
+    This service takes a URL from you and gives a short URL that can be used to open the original one.
+      <h2>
+        Example creation of short URL:
+      </h2>
+        <h3>
+          Input : 
+        </h3>
+        <code>https://url-shortener-service.glitch.me/new/https://www.google.com</code>
+        <h3>
+          Output :
+        </h3>
+        <code>{"original_url":"https://www.google.com","short_url":"https://url-shortener-service.glitch.me/4"}</code>
+      <h2>
+        Example Usage of short URL:
+      </h2>
+      <h3>
+        This URL:
+      </h3>
+        <code>https://url-shortener-service.glitch.me/4</code>
+      <h3>
+        Will Open : 
+      </h3>
+        <code>https://www.google.com</code>
+      <h2>
+        Try it now!!
+      </h2>
+    </center>
+  </body>
+</html>
